@@ -1,0 +1,20 @@
+from pydantic import BaseModel, Field
+
+class PatientData(BaseModel):
+    BMI: float = Field(..., example=24.5)
+    PhysicalHealth: float = Field(..., example=0.0)
+    MentalHealth: float = Field(..., example=2.0)
+    SleepTime: float = Field(..., example=7.0)
+    Smoking: str = Field(..., example="No")
+    AlcoholDrinking: str = Field(..., example="No")
+    Stroke: str = Field(..., example="No")
+    DiffWalking: str = Field(..., example="No")
+    Sex: str = Field(..., example="Male")
+    AgeCategory: str = Field(..., example="55-59")
+    Race: str = Field(..., example="White")
+    Diabetic: str = Field(..., example="No")
+    PhysicalActivity: str = Field(..., example="Yes")
+    GenHealth: str = Field(..., example="Very good")
+    Asthma: str = Field(..., example="No")
+    KidneyDisease: str = Field(..., example="No")
+    SkinCancer: str = Field(..., example="No")
