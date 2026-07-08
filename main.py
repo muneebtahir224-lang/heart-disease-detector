@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import joblib
 import os
-from .schema import PatientData
+from schema import PatientData
 
 app = FastAPI(
     title="Heart Disease Prediction API",
